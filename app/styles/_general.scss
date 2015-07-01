@@ -36,7 +36,6 @@ p {
 #index-banner {
     .section {
         margin-top: 20px;
-        transform: translateY(50%);
         .btn-large {
             background-color: $firework;
         }
@@ -69,6 +68,7 @@ p {
 
 @media only screen and (max-width: 992px) {
     .parallax-container {
+        height: auto;
         .section {
             position: absolute;
             top: 40%;
@@ -92,12 +92,3 @@ p {
     }
 }
 
-footer.page-footer {
-    margin: 0;
-    background-color: $oceanic;
-    .social-media-icons {
-        .btn-floating {
-            background-color: $firework;
-        }
-    }
-}
