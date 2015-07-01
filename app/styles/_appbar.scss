@@ -1,0 +1,6 @@
+.app-bar {
+	background-color: $oceanic;
+	.brand-logo, .side-menu {
+		color: color('grey','lighten-5');
+	}
+}

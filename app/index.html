@@ -22,20 +22,22 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container" ng-controller="SideNavCtrl">
-            <ul class="left hide-on-med-and-down">
-                <li><a href="" data-activates="nav-mobile" side-nav id="menuBtnA"><i class="material-icons left">menu</i>Menu</a></li>
-            </ul>
-            <a id="logo-container" href="#/" class="brand-logo center">Logo</a>
-            <ul id="nav-mobile" class="side-nav">
-                <li ng-repeat="list in linkList"><a href={{list.link}}>{{list.title}}</a></li>
-            </ul>
-            <a href="" data-activates="nav-mobile" class="button-collapse" side-nav id="menuBtnB"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav class="app-bar" role="navigation">
+            <div class="nav-wrapper container" ng-controller="SideNavCtrl">
+                <ul class="side-menu left hide-on-med-and-down">
+                    <li><a href="" data-activates="nav-mobile" side-nav id="menuBtnA"><i class="material-icons left">menu</i>Menu</a></li>
+                </ul>
+                <a id="logo-container" href="#/" class="brand-logo center">Logo</a>
+                <ul id="nav-mobile" class="side-nav">
+                    <li ng-repeat="list in linkList"><a href={{list.link}} class="waves-effect waves-light">{{list.title}}</a></li>
+                </ul>
+                <a href="" data-activates="nav-mobile" class="button-collapse" side-nav id="menuBtnB"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
     <main ng-view=""></main>
-    <footer class="page-footer teal" ng-include="'views/footer.html'"></footer>
+    <footer class="page-footer" ng-include="'views/footer.html'"></footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
     ! function(A, n, g, u, l, a, r) {

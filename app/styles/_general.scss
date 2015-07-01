@@ -1,4 +1,5 @@
 body {
+    background-color: color('grey', 'lighten-5');
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -6,12 +7,6 @@ body {
 
 main {
     flex: 1 0 auto;
-}
-
-nav {
-    ul a, .brand-logo {
-        color: #444;
-    }
 }
 
 p {
@@ -22,13 +17,46 @@ p {
     color: $onyx;
 }
 
+.parallax {
+    background-color: $oceanic;
+}
+
 .parallax-container {
-    min-height: 380px;
+    min-height: 500px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
     .section {
         width: 100%;
+    }
+}
+
+#index-banner {
+    .section {
+        margin-top: 20px;
+        transform: translateY(50%);
+        .btn-large {
+            background-color: $firework;
+        }
+    }
+}
+
+.about-company,
+.service-section {
+    .section {
+        .row {
+            margin-top: 20px;
+        }
+    }
+}
+
+.service-section {
+    .section {
+        .row {
+            .btn {
+                background-color: $firework;
+            }
+        }
     }
 }
 
@@ -59,4 +87,10 @@ p {
 
 footer.page-footer {
     margin: 0;
+    background-color: $oceanic;
+    .social-media-icons {
+        .btn-floating {
+            background-color: $firework;
+        }
+    }
 }
