@@ -12,7 +12,7 @@ angular.module('project1App')
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
-        $('#'+attrs.sideNav).sideNav();
+        $('#'+attrs.id).sideNav();
       }
     };
   });

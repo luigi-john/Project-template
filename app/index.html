@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -23,18 +23,18 @@
     <![endif]-->
     <!-- Add your site or application content here -->
     <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
+        <div class="nav-wrapper container" ng-controller="SideNavCtrl">
+            <ul class="left hide-on-med-and-down">
+                <li><a href="" data-activates="nav-mobile" side-nav id="menuBtnA"><i class="material-icons left">menu</i>Menu</a></li>
             </ul>
+            <a id="logo-container" href="#/" class="brand-logo center">Logo</a>
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
+                <li ng-repeat="list in linkList"><a href={{list.link}}>{{list.title}}</a></li>
             </ul>
-            <a href="" data-activates="nav-mobile" class="button-collapse" side-nav="menuBtn" id="menuBtn"><i class="material-icons">menu</i></a>
+            <a href="" data-activates="nav-mobile" class="button-collapse" side-nav id="menuBtnB"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <div ng-view=""></div>
+    <main ng-view=""></main>
     <footer class="page-footer teal" ng-include="'views/footer.html'"></footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -67,6 +67,7 @@
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/directives/parallax.js"></script>
     <script src="scripts/directives/sidenav.js"></script>
+    <script src="scripts/controllers/side-nav.js"></script>
     <!-- endbuild -->
 </body>
 
