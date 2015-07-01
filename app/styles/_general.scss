@@ -17,13 +17,15 @@ p {
     color: $onyx;
 }
 
-.parallax {
+.oceanic {
     background-color: $oceanic;
+}
+.news {
+    background-color: $taupe;
 }
 
 .parallax-container {
     min-height: 500px;
-    line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
     .section {
@@ -41,7 +43,7 @@ p {
     }
 }
 
-.about-company,
+.about-section,
 .service-section {
     .section {
         .row {
@@ -58,6 +60,11 @@ p {
             }
         }
     }
+}
+
+
+.news-section {
+   min-height: 400px;
 }
 
 @media only screen and (max-width: 992px) {
