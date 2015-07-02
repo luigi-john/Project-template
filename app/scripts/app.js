@@ -29,7 +29,8 @@ angular
         controller: 'AboutCtrl'
       })
       .when('/schedule', {
-        templateUrl: 'views/schedule.html'
+        templateUrl: 'views/schedule.html',
+        controller: 'ScheduleCtrl'
       })
       .when('/helpdesk', {
         templateUrl: 'views/helpdesk.html'

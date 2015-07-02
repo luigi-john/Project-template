@@ -1,1 +1,63 @@
-<p>This is the schedule view.</p>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m4">
+                &nbsp;
+            </div>
+            <div class="col s12 m4">
+                <label for="fromDate" class="">From</label>
+                <input type="date" class="datepicker" datepicker id="fromDate">
+            </div>
+            <div class="col s12 m4">
+                <label for="toDate" class="">To</label>
+                <input type="date" class="datepicker" datepicker id="toDate">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <table class="responsive-table bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="boat">Boat</th>
+                            <th data-field="date">Date</th>
+                            <th data-field="time">Time</th>
+                            <th data-field="appro">Approximate</th>
+                            <th data-field="route">Route</th>
+                            <th data-field="price">Regular Price</th>
+                            <th data-field="studPrice">Student</th>
+                            <th data-field="senior">Senior</th>
+                            <th data-field="promo">Promo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="sched in schedList">
+                            <td>{{sched.boat}}</td>
+                            <td>{{sched.date}}</td>
+                            <td>{{sched.time}}</td>
+                            <td>{{sched.appro}}</td>
+                            <td>{{sched.route}}</td>
+                            <td>{{sched.reg}}</td>
+                            <td>{{sched.stud}}</td>
+                            <td>{{sched.senior}}</td>
+                            <td>{{sched.promo}}</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+            <div class="col s12 center">
+            	<ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+            <div class="col s12 center">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. Etiam risus massa, dapibus a commodo pharetra, imperdiet sit amet metus. Sed finibus, dolor id consectetur porttitor, ante augue pharetra risus, vitae sodales ante enim at lacus. Maecenas pharetra tempus neque, non porta magna tincidunt eget. </p>
+            </div>
+        </div>
+    </div>
+</div>
