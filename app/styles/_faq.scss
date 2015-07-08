@@ -1,0 +1,27 @@
+#faqBg:after {
+	content:'';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: black;
+    opacity: 0.4;
+}
+
+.faq-contents-section {
+	.section {
+		.row {
+			margin-top: 15px;
+		}
+	}
+}
+
+.faq-list {
+	.btn {
+		background-color: $taupe;
+		margin-bottom: 15px;
+	}
+}

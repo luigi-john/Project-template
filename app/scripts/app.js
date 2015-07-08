@@ -33,7 +33,8 @@ angular
         controller: 'ScheduleCtrl'
       })
       .when('/helpdesk', {
-        templateUrl: 'views/helpdesk.html'
+        templateUrl: 'views/helpdesk.html',
+        controller: 'FaqCtrl'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html'
