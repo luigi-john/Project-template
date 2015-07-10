@@ -1,12 +1,66 @@
-<nav>
-  <ul class="right hide-on-med-and-down">
-    <li><a href="#!">First Sidebar Link</a></li>
-    <li><a href="#!">Second Sidebar Link</a></li>
-  </ul>
-  <ul id="slide-out" class="side-nav">
-    <li><a href="#!">First Sidebar Link</a></li>
-    <li><a href="#!">Second Sidebar Link</a></li>
-  </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-</nav>
-        
+<div class="parallax-container page-header valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 center">
+                    <h5 class="header white-text text-lighten-2">Careers</h5>
+                    <p class="white-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax" parallax="faqBg" id="faqBg">
+        <img src="images/faq.jpg" />
+    </div>
+</div>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="collection career-collection">
+                    <a ng-repeat="career in careerList" ng-click="changeCareer(career.id)" class="waves-effect waves-light collection-item">{{career.title}}</a>
+                </div>
+            </div>
+            <div class="col s12 m9">
+                <div class="col s12 career-description center align">
+                    <div class="row">
+                        <h4>{{title}}</h4>
+                        <p>{{desc}}</p>
+                    </div>
+                </div>
+                <div class="col s12 application-form center-align">
+                    <h5>Apply</h5>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input id="app_name" type="text" class="validate">
+                                <label for="app_name">Full Name</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input id="app_email" type="email" class="validate">
+                                <label for="app_email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <input id="app_phone" type="text" class="validate">
+                                <label for="app_phone">Phone #</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input id="app_address" type="text" class="validate">
+                                <label for="app_address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="app_resume" type="text" class="validate">
+                                <label for="app_resume">CV / Resume</label>
+                            </div>
+                        </div>
+                        <a class="app-submit-btn waves-effect waves-light btn">Submit</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

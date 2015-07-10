@@ -14,7 +14,7 @@ p {
 }
 
 .image-overlay {
-    content:'';
+    content: '';
     top: 0;
     left: 0;
     z-index: 10;
@@ -25,6 +25,7 @@ p {
     background: black;
     opacity: 0.4;
 }
+
 .button-collapse {
     color: $onyx;
 }
@@ -32,6 +33,7 @@ p {
 .oceanic {
     background-color: $oceanic;
 }
+
 .news {
     background-color: $taupe;
 }
@@ -45,7 +47,7 @@ p {
 }
 
 .page-header {
-    min-height: 380px;    
+    min-height: 380px;
 }
 
 #index-banner {
@@ -76,7 +78,16 @@ p {
     }
 }
 
-
+.page {
+    min-height: 100vh;
+    box-sizing: border-box;
+    transform-style: inherit;
+    position: relative;
+    width: 100%;
+    transition: margin 1s cubic-bezier(0.25, .1, .25, 1);
+    z-index: 1;
+    overflow: hidden
+}
 
 @media only screen and (max-width: 992px) {
     .parallax-container {

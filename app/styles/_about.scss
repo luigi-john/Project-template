@@ -12,6 +12,10 @@
     background-color: $taupe;
 }
 
+.mission-section, .history {
+    height: 400px;
+}
+
 #aboutBg:after {
 	content:'';
     top: 0;

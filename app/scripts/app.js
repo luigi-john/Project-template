@@ -40,7 +40,8 @@ angular
                 templateUrl: 'views/contact.html'
             })
             .when('/careers', {
-                templateUrl: 'views/careers.html'
+                templateUrl: 'views/careers.html',
+                controller: 'CareerCtrl'
             })
             .otherwise({
                 redirectTo: '/'
