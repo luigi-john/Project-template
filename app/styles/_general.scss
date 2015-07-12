@@ -78,6 +78,18 @@ p {
     }
 }
 
+
+.slider {
+    .slides {
+        background-color: transparent!important;
+    }
+    .indicators {
+        .indicator-item.active {
+            background-color: $oceanic;
+        }
+    }
+}
+
 .page {
     min-height: 100vh;
     box-sizing: border-box;
