@@ -15,8 +15,7 @@ angular
         'ngResource',
         'ngRoute',
         'ngSanitize',
-        'ngTouch',
-        'br.fullpage'
+        'ngTouch'
     ])
     .config(function($routeProvider) {
         $routeProvider
@@ -43,9 +42,14 @@ angular
                 templateUrl: 'views/careers.html',
                 controller: 'CareerCtrl'
             })
+            .when('/dashboard', {
+                templateUrl: 'views/dashboard.html',
+                controller: 'DashboardCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
+
     })
     .config(['$compileProvider', function($compileProvider) {
         $compileProvider.debugInfoEnabled(false);

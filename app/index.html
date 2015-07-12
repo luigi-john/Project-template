@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
-    <link rel="stylesheet" href="bower_components/br-fullpage/dist/br-fullpage.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,25 +18,12 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="project1App">
+<body ng-app="project1App" ng-controller="IndexCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="navbar-fixed">
-        <nav class="app-bar" role="navigation">
-            <div class="nav-wrapper container" ng-controller="SideNavCtrl">
-                <ul class="side-menu left hide-on-med-and-down">
-                    <li><a href="" data-activates="nav-mobile" side-nav id="menuBtnA"><i class="material-icons left">menu</i>Menu</a></li>
-                </ul>
-                <a id="logo-container" href="#/" class="brand-logo center">Logo</a>
-                <ul id="nav-mobile" class="side-nav">
-                    <li ng-repeat="list in linkList"><a href={{list.link}} class="waves-effect waves-light">{{list.title}}</a></li>
-                </ul>
-                <a href="" data-activates="nav-mobile" class="button-collapse" side-nav id="menuBtnB"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-    </div>
+    <div class="navbar-fixed" ng-include="'views/sidenav.html'"></div>
     <main ng-view=""></main>
     <footer class="page-footer" ng-include="'views/footer.html'"></footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -63,7 +49,6 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/materialize/bin/materialize.js"></script>
-    <script src="bower_components/br-fullpage/dist/br-fullpage.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -82,6 +67,7 @@
     <script src="scripts/controllers/career.js"></script>
     <script src="scripts/directives/material-select.js"></script>
     <script src="scripts/directives/slider.js"></script>
+    <script src="scripts/controllers/index.js"></script>
     <!-- endbuild -->
 </body>
 
