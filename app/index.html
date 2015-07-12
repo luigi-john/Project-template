@@ -24,9 +24,9 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-    <div class="navbar-fixed" ng-include="'views/sidenav.html'"></div>
+    <div class="navbar-fixed" ng-include="'views/sidenav.html'" ng-hide=hideDiv></div>
     <main ng-view=""></main>
-    <footer class="page-footer" ng-include="'views/footer.html'"></footer>
+    <footer class="page-footer" ng-include="'views/footer.html'" ng-hide=hideDiv></footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
     ! function(A, n, g, u, l, a, r) {
@@ -70,6 +70,7 @@
     <script src="scripts/directives/material-select.js"></script>
     <script src="scripts/directives/slider.js"></script>
     <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/dashboard.js"></script>
     <!-- endbuild -->
 </body>
 
