@@ -8,6 +8,10 @@
  * Controller of the project1App
  */
 angular.module('project1App')
-  .controller('IndexCtrl', function ($scope, $location) {
-    	console.log($location.path());
-  });
+    .controller('IndexCtrl', function($scope, $location, $rootScope) {
+        $scope.location = $location.path();
+
+        $rootScope.$apply(function(){
+        	console.log($location.path());
+        });
+    });
