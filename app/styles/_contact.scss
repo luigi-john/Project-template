@@ -12,3 +12,7 @@
         }
     }
 }
+
+#contactBg:after {
+	@include transparentBg(0.4);
+}
