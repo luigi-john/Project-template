@@ -7,3 +7,19 @@ footer.page-footer {
         }
     }
 }
+
+.footer-about {
+	.btn {
+		background-color: $firework;
+	}
+
+}
+
+.footer-contact-info {
+	.list {
+		span {
+			color: color("grey", "base");
+			padding-left: 15px;
+		}
+	}
+}
