@@ -8,10 +8,16 @@
  * Controller of the project1App
  */
 angular.module('project1App')
-    .controller('IndexCtrl', function($scope, $location, $rootScope) {
-        $scope.location = $location.path();
+    .controller('IndexCtrl', function($scope, $window, $location) {
 
-        $rootScope.$apply(function(){
-        	console.log($location.path());
+    	$scope.hideDiv = true;
+        $scope.$on('$locationChangeStart', function() {
+            console.log($location.path());
+            if ($location.path() === '/dashboard') {
+                $scope.hideDiv = true;
+
+            } else {
+                $scope.hideDiv = false;
+            }
         });
     });
