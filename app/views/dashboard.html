@@ -5,7 +5,7 @@
         <p class="left-align white-text">user@example.com</p>
 
     </li>
-    <li class="bold nav-list-item" ng-repeat="list in dashboardLinkList">
+    <li class="bold nav-list-item" ng-repeat="list in dashboardLinkList" ng-class="{ activeItem:isActive('/{{list.className}}')}">
         <a ui-sref={{list.link}} class="waves-effect waves-light">
             <i class="material-icons">{{list.icon}}</i><span>{{list.title}}</span>
         </a>

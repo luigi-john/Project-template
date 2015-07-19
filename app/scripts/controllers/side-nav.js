@@ -35,22 +35,27 @@ angular.module('project1App')
         $scope.dashboardLinkList = [{
             link: 'dashboard',
             title: 'Home',
+            className: 'dashboard',
             icon: 'home'
         }, {
             link: 'dashboard.inbox',
             title: 'Inbox',
+            className: 'dashboard/inbox',
             icon: 'inbox'
         }, {
             link: 'dashboard.schedule',
+            className: 'dashboard/schedule',
             title: 'Schedule',
             icon: 'event_note'
         }, {
             link: 'dashboard.ships',
             title: 'Ships',
+            className: 'dashboard/ships',
             icon: 'directions_boat'
         }, {
             link: 'dashboard.news',
             title: 'News',
+            className: 'dashboard/news',
             icon: 'cast'
         }];
     });

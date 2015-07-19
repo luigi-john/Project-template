@@ -14,6 +14,9 @@
             margin-right: 15px;
         }
     }
+    .activeItem {
+        background-color: rgba(0, 0, 0, .2);
+    }
     li.user {
         cursor: pointer;
         text-align: center;
@@ -30,18 +33,15 @@
         }
     }
 }
-
 main.dashboard-main {
     padding-left: 240px;
 }
-
 .dashboard-nav {
     background-color: #fff;
     i.material-icons {
         color: $onyx;
     }
 }
-
 .some-cards {
     .first-card {
         .card-image {
@@ -64,29 +64,24 @@ main.dashboard-main {
         }
     }
 }
-
 .card-statistics {
     .card {
         padding-bottom: 15px;
     }
 }
-
 .card-main-stat {
     .card {
         padding: 15px;
     }
 }
-
 .dashboard-settings {
     a {
         color: $oceanic;
     }
 }
-
 .dropdown-content.dashboard li > a {
     color: $oceanic;
 }
-
 .oceanic {
     background-color: $oceanic;
 }
@@ -99,7 +94,6 @@ main.dashboard-main {
     height: 40px;
     width: 40px;
 }
-
 .edit-btns {
     .btn-floating {
         background-color: $firework;

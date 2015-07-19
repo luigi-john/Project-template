@@ -8,7 +8,10 @@
  * Controller of the project1App
  */
 angular.module('project1App')
-    .controller('DashboardCtrl', function($scope) {
+    .controller('DashboardCtrl', function($scope,$location) {
+        $scope.isActive = function(route) {
+            return route === $location.path();
+        };
         $scope.inboxList = [{
             name: 'Lorem Ipsum',
             email: 'loreem@ipsum.com',
@@ -137,13 +140,37 @@ angular.module('project1App')
             name: 'B1',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             dimen: '(1,201 ft) x  161 ft) x 15.2 metres (50 ft).'
-        } ];
+        }];
 
-        $scope.newsList = [
-        	{id:0,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
-        	{id:1,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
-        	{id:2,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
-        	{id:3,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
-        	{id:4,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
-        ];
+        $scope.newsList = [{
+            id: 0,
+            headline: 'Lorem Ipsum',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'Dolor et',
+            date: 'July 19, 2015'
+        }, {
+            id: 1,
+            headline: 'Lorem Ipsum',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'Dolor et',
+            date: 'July 19, 2015'
+        }, {
+            id: 2,
+            headline: 'Lorem Ipsum',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'Dolor et',
+            date: 'July 19, 2015'
+        }, {
+            id: 3,
+            headline: 'Lorem Ipsum',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'Dolor et',
+            date: 'July 19, 2015'
+        }, {
+            id: 4,
+            headline: 'Lorem Ipsum',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            author: 'Dolor et',
+            date: 'July 19, 2015'
+        }, ];
     });
