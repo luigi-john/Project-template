@@ -16,7 +16,8 @@ angular.module('project1App')
      	{id: '3',title:'Career 4',desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor risus eu neque varius auctor. Cras non sollicitudin justo. Suspendisse pretium laoreet quam vitae ultrices. Donec augue lectus, sodales vitae ante id, pulvinar viverra purus. Suspendisse vel enim nunc. Morbi sed placerat ex. Nunc sit amet auctor quam.'},
      	{id: '4',title:'Career 5',desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor risus eu neque varius auctor. Cras non sollicitudin justo. Suspendisse pretium laoreet quam vitae ultrices. Donec augue lectus, sodales vitae ante id, pulvinar viverra purus. Suspendisse vel enim nunc. Morbi sed placerat ex. Nunc sit amet auctor quam.'}
     ];
-
+    $scope.title = $scope.careerList[0].title;
+    $scope.desc = $scope.careerList[0].desc;  
     $scope.changeCareer = function(id){
   			var career = $filter('filter')($scope.careerList, {id: id})[0];
   			$scope.title = career.title;	

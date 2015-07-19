@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row center">
                 <h5 class="header white-text text-lighten-2">Who are we?</h5>
-                    <p class="white-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. </p>
+                <p class="white-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum. </p>
             </div>
         </div>
     </div>
-    <div class="parallax" id="aboutBg" parallax="aboutBg"><img src="images/about.jpg"></div>
+    <div class="parallax" id="aboutBg" parallax="aboutBg"><img src="http://www.gsa.europa.eu/sites/default/files/SHIP.jpg"></div>
 </div>
 <div class="container mission-section center valign-wrapper">
     <div class="section">
@@ -31,8 +31,8 @@
         </div>
     </div>
 </div>
-<div class="container service-section center ">
-    <div class="section">
+<div class="service-section center ">
+    <div class="section container">
         <div class="row">
             <div class="col s12 m12">
                 <h5 class="header grey-text text-darken-2">Services</h5>
@@ -41,6 +41,60 @@
                 </div>
                 <div class="col s12 m4">
                     <img class="responsive-img" src="images/services.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container people-section">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m12">
+                <h5 class="header grey-text text-darken-2 center">Meet the People</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="col s12 m4">
+                    <img class="responsive-img" src="images/about-home.jpg" />
+                </div>
+                <div class="col s12 m8">
+                    <h6 class="grey-text text-darken-3 left-align bold">Lorem Ipsum</h6>
+                    <p class="grey-text text-darken-1 left-align valign-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="col s12 m8">
+                    <h6 class="grey-text text-darken-3 left-align bold">Lorem Ipsum</h6>
+                    <p class="grey-text text-darken-1 left-align valign-wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper elementum massa. Aliquam cursus laoreet dolor, ac ullamcorper diam ullamcorper vestibulum.</p>
+                </div>
+                <div class="col s12 m4">
+                    <img class="responsive-img" src="images/about-home.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="vessels-section">
+    <div class="section container">
+        <div class="row">
+            <div class="col s12 m12">
+                <h5 class="header grey-text text-darken-2 center">Our Vessels</h5>
+                <div class="col s12 m4" ng-repeat="vessel in vessels">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" ng-src={{vessel.img}}>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">{{vessel.name}}<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Name of Vessel<i class="material-icons right">close</i></span>
+                            <p>{{vessel.details}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

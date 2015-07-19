@@ -20,7 +20,15 @@
 		} 
 	}
 }
-
+.resume-input {
+	.btn {
+		background-color: $oceanic;
+	}
+}
+.form-resume {
+	border-bottom: 2px solid $oceanic;
+  	padding-bottom: 20px;
+}
 #careerBg:after {
 	@include transparentBg(0.4);
 }

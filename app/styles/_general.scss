@@ -29,6 +29,20 @@ p {
 .button-collapse {
     color: $onyx;
 }
+.main-slider {
+    border-bottom: 2px solid color('grey','lighten-5');
+    padding-bottom: 20px;
+}
+.news-slider {
+    .indicators {
+        .indicator-item {
+            height: 10px;
+            width: 10px;
+            margin: 0 6px;
+        }
+    }
+}
+
 
 .oceanic {
     background-color: $oceanic;
