@@ -24,16 +24,24 @@
             background-color: transparent!important;
         }
     }
+    li.nav-list-item {
+        .material-icons {
+            vertical-align: middle;
+        }
+    }
 }
+
 main.dashboard-main {
     padding-left: 240px;
 }
+
 .dashboard-nav {
     background-color: #fff;
     i.material-icons {
         color: $onyx;
     }
 }
+
 .some-cards {
     .first-card {
         .card-image {
@@ -45,9 +53,9 @@ main.dashboard-main {
     .second-card {
         background-color: $oceanic;
         .card-content {
-        	label {
-        		color: color('grey','lighten-5');
-        	}
+            label {
+                color: color('grey', 'lighten-5');
+            }
         }
     }
     .card-action {
@@ -58,12 +66,42 @@ main.dashboard-main {
 }
 
 .card-statistics {
-	.card {
-		padding-bottom: 15px;
-	}
+    .card {
+        padding-bottom: 15px;
+    }
 }
+
 .card-main-stat {
-	.card {
-		padding: 15px;
-	}
+    .card {
+        padding: 15px;
+    }
+}
+
+.dashboard-settings {
+    a {
+        color: $oceanic;
+    }
+}
+
+.dropdown-content.dashboard li > a {
+    color: $oceanic;
+}
+
+.oceanic {
+    background-color: $oceanic;
+}
+.schedule-section {
+    .btn {
+        background-color: $oceanic;
+    }
+}
+.boat-pic {
+    height: 40px;
+    width: 40px;
+}
+
+.edit-btns {
+    .btn-floating {
+        background-color: $firework;
+    }
 }

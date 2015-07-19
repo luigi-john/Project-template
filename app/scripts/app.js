@@ -92,45 +92,49 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-            .state('dashboard.inbox', {
-                url: '/inbox',
-                views: {                    
-                    'dashboardView': {
-                        templateUrl: 'views/dashboard-inbox.html'
-                    }
+        .state('dashboard.inbox', {
+            url: '/inbox',
+            views: {
+                'dashboardView': {
+                    templateUrl: 'views/dashboard-inbox.html',
+                    controller: 'DashboardCtrl'
                 }
-            })
-            .state('dashboard.schedule', {
-                url: '/schedule',
-                views: {                    
-                    'dashboardView': {
-                        templateUrl: 'views/dashboard-schedule.html'
-                    }
+            }
+        })
+        .state('dashboard.schedule', {
+            url: '/schedule',
+            views: {
+                'dashboardView': {
+                    templateUrl: 'views/dashboard-schedule.html',
+                    controller: 'DashboardCtrl'
                 }
-            })
-            .state('dashboard.news', {
-                url: '/news',
-                views: {                    
-                    'dashboardView': {
-                        templateUrl: 'views/dashboard-news.html'
-                    }
+            }
+        })
+        .state('dashboard.news', {
+            url: '/news',
+            views: {
+                'dashboardView': {
+                    templateUrl: 'views/dashboard-news.html',
+                    controller: 'DashboardCtrl'
                 }
-            })
-            .state('dashboard.ships', {
-                url: '/ships',
-                views: {                    
-                    'dashboardView': {
-                        templateUrl: 'views/dashboard-ships.html'
-                    }
+            }
+        })
+        .state('dashboard.ships', {
+            url: '/ships',
+            views: {
+                'dashboardView': {
+                    templateUrl: 'views/dashboard-ships.html',
+                    controller: 'DashboardCtrl'
                 }
-            });
+            }
+        });
 });
 app.config(['$compileProvider', function($compileProvider) {
     $compileProvider.debugInfoEnabled(false);
 }]);
 
-app.run(['$state','$route', '$rootScope', '$location', function($state,$route, $rootScope, $location) {
-    $state.transitionTo('index');    
+app.run(['$state', '$route', '$rootScope', '$location', function($state, $route, $rootScope, $location) {
+    $state.transitionTo('index');
     var original = $location.path;
     $location.path = function(path, reload) {
         if (reload === false) {

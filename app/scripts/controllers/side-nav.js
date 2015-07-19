@@ -29,3 +29,28 @@ angular.module('project1App')
             title: 'Careers'
         }, ];
     });
+
+angular.module('project1App')
+    .controller('DashboardSideNavCtrl', function($scope) {
+        $scope.dashboardLinkList = [{
+            link: 'dashboard',
+            title: 'Home',
+            icon: 'home'
+        }, {
+            link: 'dashboard.inbox',
+            title: 'Inbox',
+            icon: 'inbox'
+        }, {
+            link: 'dashboard.schedule',
+            title: 'Schedule',
+            icon: 'event_note'
+        }, {
+            link: 'dashboard.ships',
+            title: 'Ships',
+            icon: 'directions_boat'
+        }, {
+            link: 'dashboard.news',
+            title: 'News',
+            icon: 'cast'
+        }];
+    });
