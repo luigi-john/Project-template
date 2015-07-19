@@ -59,6 +59,11 @@ p {
     }
 }
 
+.about-section {
+    .btn {
+        background-color: $firework;
+    }
+}
 .about-section,
 .service-section {
     .section {
@@ -77,7 +82,13 @@ p {
         }
     }
 }
+#homeBG:after {
+    @include transparentBg(0.5);
+}
+#servicesBG:after {
+    @include transparentBg(0.5);
 
+}
 
 .slider {
     .slides {
