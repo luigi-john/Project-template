@@ -8,6 +8,5 @@
  * Controller of the project1App
  */
 angular.module('project1App')
-  .controller('DashboardCtrl', function () {
-   
-  });
+    .controller('DashboardCtrl', function() {
+    });

@@ -5,7 +5,7 @@
         </ul>
         <a id="logo-container" href="#/" class="brand-logo center">Logo</a>
         <ul id="nav-mobile" class="side-nav">
-            <li ng-repeat="list in linkList"><a href={{list.link}} class="waves-effect waves-light">{{list.title}}</a></li>
+            <li ng-repeat="list in linkList"><a ui-sref={{list.link}} class="waves-effect waves-light">{{list.title}}</a></li>
         </ul>
         <a href="" data-activates="nav-mobile" class="button-collapse" side-nav id="menuBtnB"><i class="material-icons">menu</i></a>
     </div>

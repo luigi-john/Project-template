@@ -10,22 +10,22 @@
 angular.module('project1App')
     .controller('SideNavCtrl', function($scope) {
         $scope.linkList = [{
-            link: '#/',
+            link: 'index',
             title: 'Home'
         }, {
-            link: '#/schedule',
+            link: 'schedule',
             title: 'Schedule & Price'
         }, {
-            link: '#/about',
+            link: 'about',
             title: 'About Us'
         }, {
-            link: '#/helpdesk',
+            link: 'helpdesk',
             title: 'Helpdesk'
         }, {
-            link: '#/contact',
+            link: 'contact',
             title: 'Contact Us'
         }, {
-            link: '#/careers',
+            link: 'careers',
             title: 'Careers'
         }, ];
     });

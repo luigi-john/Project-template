@@ -16,47 +16,121 @@ var app =
         'ngResource',
         'ngRoute',
         'ngSanitize',
-        'ngTouch'
+        'ngTouch',
+        'ui.router'
     ]);
-app.config(function($routeProvider) {
-    $routeProvider
-        .when('/', {
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
-        })
-        .when('/about', {
-            templateUrl: 'views/about.html',
-            controller: 'AboutCtrl'
-        })
-        .when('/schedule', {
-            templateUrl: 'views/schedule.html',
-            controller: 'ScheduleCtrl'
-        })
-        .when('/helpdesk', {
-            templateUrl: 'views/helpdesk.html',
-            controller: 'FaqCtrl'
-        })
-        .when('/contact', {
-            templateUrl: 'views/contact.html'
-        })
-        .when('/careers', {
-            templateUrl: 'views/careers.html',
-            controller: 'CareerCtrl'
-        })
-        .when('/dashboard', {
-            templateUrl: 'views/dashboard.html',
-            controller: 'DashboardCtrl'
-        })
-        .otherwise({
-            redirectTo: '/'
-        });
 
+
+
+app.config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
+    $stateProvider
+        .state('index', {
+            url: '/',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/main.html',
+                    controller: 'MainCtrl'
+                }
+            }
+        })
+        .state('about', {
+            url: '/about',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/about.html',
+                    controller: 'AboutCtrl'
+                }
+            }
+        })
+        .state('schedule', {
+            url: '/schedule',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/schedule.html',
+                    controller: 'ScheduleCtrl'
+                }
+            }
+        })
+        .state('helpdesk', {
+            url: '/helpdesk',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/helpdesk.html',
+                    controller: 'FaqCtrl'
+                }
+            }
+        })
+        .state('contact', {
+            url: '/contact',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/contact.html',
+                    controller: 'ContactCtrl'
+                }
+            }
+        })
+        .state('careers', {
+            url: '/careers',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/careers.html',
+                    controller: 'CareerCtrl'
+                }
+            }
+        })
+        .state('dashboard', {
+            url: '/dashboard',
+            views: {
+                'mainView': {
+                    templateUrl: 'views/dashboard.html',
+                    controller: 'DashboardCtrl'
+                },
+                'dashboardView@dashboard': {
+                    templateUrl: 'views/dashboard-main.html',
+                    controller: 'DashboardCtrl'
+                }
+            }
+        })
+            .state('dashboard.inbox', {
+                url: '/inbox',
+                views: {                    
+                    'dashboardView': {
+                        templateUrl: 'views/dashboard-inbox.html'
+                    }
+                }
+            })
+            .state('dashboard.schedule', {
+                url: '/schedule',
+                views: {                    
+                    'dashboardView': {
+                        templateUrl: 'views/dashboard-schedule.html'
+                    }
+                }
+            })
+            .state('dashboard.news', {
+                url: '/news',
+                views: {                    
+                    'dashboardView': {
+                        templateUrl: 'views/dashboard-news.html'
+                    }
+                }
+            })
+            .state('dashboard.ships', {
+                url: '/ships',
+                views: {                    
+                    'dashboardView': {
+                        templateUrl: 'views/dashboard-ships.html'
+                    }
+                }
+            });
 });
 app.config(['$compileProvider', function($compileProvider) {
     $compileProvider.debugInfoEnabled(false);
 }]);
 
-app.run(['$route', '$rootScope', '$location', function($route, $rootScope, $location) {
+app.run(['$state','$route', '$rootScope', '$location', function($state,$route, $rootScope, $location) {
+    $state.transitionTo('index');    
     var original = $location.path;
     $location.path = function(path, reload) {
         if (reload === false) {
