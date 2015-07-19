@@ -145,5 +145,5 @@ angular.module('project1App')
         	{id:2,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
         	{id:3,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
         	{id:4,headline:'Lorem Ipsum',body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',author:'Dolor et', date: 'July 19, 2015'},
-        ]
+        ];
     });
