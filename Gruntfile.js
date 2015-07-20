@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
   };
-
+    grunt.loadNpmTasks('grunt-karma');
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -254,7 +254,7 @@ module.exports = function (grunt) {
         flow: {
           html: {
             steps: {
-              js: ['concat', 'uglifyjs'],
+              js: ['concat'],
               css: ['cssmin']
             },
             post: {}
@@ -458,10 +458,10 @@ module.exports = function (grunt) {
     'copy:dist',
     'cdnify',
     'cssmin',
-    'uglify',
+    /*'uglify',*/
     'filerev',
     'usemin',
-    'htmlmin'
+    /*'htmlmin'*/
   ]);
 
   grunt.registerTask('default', [
