@@ -78,7 +78,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                     controller: 'CareerCtrl'
                 }
             }
-        })
+        })/*
         .state('dashboard', {
             url: '/dashboard',
             views: {
@@ -91,11 +91,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
                     controller: 'DashboardCtrl'
                 }
             }
-        })
-        .state('dashboard.inbox', {
-            url: '/inbox',
+        })*/
+        .state('dashboard', {
+            url: '/dashboard',
             views: {
-                'dashboardView': {
+                'mainView': {
+                    templateUrl: 'views/dashboard.html',
+                    controller: 'DashboardCtrl'
+                },
+                'dashboardView@dashboard': {
                     templateUrl: 'views/dashboard-inbox.html',
                     controller: 'DashboardCtrl'
                 }
