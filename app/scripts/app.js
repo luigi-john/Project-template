@@ -96,11 +96,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/dashboard',
             views: {
                 'mainView': {
-                    templateUrl: 'views/dashboard.html',
+                    templateUrl: 'views/dashboard/dashboard.html',
                     controller: 'DashboardCtrl'
                 },
                 'dashboardView@dashboard': {
-                    templateUrl: 'views/dashboard-inbox.html',
+                    templateUrl: 'views/dashboard/dashboard-inbox.html',
                     controller: 'DashboardCtrl'
                 }
             }
@@ -109,7 +109,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/schedule',
             views: {
                 'dashboardView': {
-                    templateUrl: 'views/dashboard-schedule.html',
+                    templateUrl: 'views/dashboard/dashboard-schedule.html',
                     controller: 'DashboardCtrl'
                 }
             }
@@ -118,7 +118,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/news',
             views: {
                 'dashboardView': {
-                    templateUrl: 'views/dashboard-news.html',
+                    templateUrl: 'views/dashboard/dashboard-news.html',
                     controller: 'DashboardCtrl'
                 }
             }
@@ -127,7 +127,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/ships',
             views: {
                 'dashboardView': {
-                    templateUrl: 'views/dashboard-ships.html',
+                    templateUrl: 'views/dashboard/dashboard-ships.html',
                     controller: 'DashboardCtrl'
                 }
             }
