@@ -96,6 +96,11 @@ p {
         }
     }
 }
+
+.news-section{
+    background-color: $taupe;
+}
+
 #homeBG:after {
     @include transparentBg(0.5);
 }
@@ -143,4 +148,8 @@ p {
     #index-banner .section {
         top: 0;
     }
+}
+#menuBtnB {
+    padding-left: 15px;
+    color: color('grey','lighten-5');
 }

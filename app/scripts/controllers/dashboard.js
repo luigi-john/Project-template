@@ -74,7 +74,7 @@ angular.module('project1App')
             name: 'B1',
             time: '1:00PM',
             appro: '2hrs',
-            route: 'Lucena',
+            route: 'Route 1',
             reg: '100',
             stud: '80',
             sen: '70'
@@ -83,7 +83,7 @@ angular.module('project1App')
             name: 'B1',
             time: '1:00PM',
             appro: '2hrs',
-            route: 'Lucena',
+            route: 'Route 2',
             reg: '100',
             stud: '80',
             sen: '70'
@@ -92,7 +92,7 @@ angular.module('project1App')
             name: 'B1',
             time: '1:00PM',
             appro: '2hrs',
-            route: 'Lucena',
+            route: 'Route 3',
             reg: '100',
             stud: '80',
             sen: '70'
@@ -101,7 +101,7 @@ angular.module('project1App')
             name: 'B1',
             time: '1:00PM',
             appro: '2hrs',
-            route: 'Lucena',
+            route: 'Route 4',
             reg: '100',
             stud: '80',
             sen: '70'
@@ -110,7 +110,7 @@ angular.module('project1App')
             name: 'B1',
             time: '1:00PM',
             appro: '2hrs',
-            route: 'Lucena',
+            route: 'Route 5',
             reg: '100',
             stud: '80',
             sen: '70'

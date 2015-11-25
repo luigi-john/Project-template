@@ -32,15 +32,10 @@ angular.module('project1App')
 
 angular.module('project1App')
     .controller('DashboardSideNavCtrl', function($scope) {
-        $scope.dashboardLinkList = [{
+        $scope.dashboardLinkList = [ {
             link: 'dashboard',
-            title: 'Home',
-            className: 'dashboard',
-            icon: 'home'
-        }, {
-            link: 'dashboard.inbox',
             title: 'Inbox',
-            className: 'dashboard/inbox',
+            className: 'dashboard',
             icon: 'inbox'
         }, {
             link: 'dashboard.schedule',
