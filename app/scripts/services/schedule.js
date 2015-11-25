@@ -64,3 +64,30 @@ angular.module('project1App')
             }]
         };
     });
+/*
+Regular Daily Schedule
+Lucena - Balanacan
+2:30 Am
+10:30 am
+3:30 pm
+11:30 pm
+
+
+Bal - Luc
+6:30am
+11:30am
+2:30pm
+7:30pm
+
+
+
+
+Fare
+Regular 260php
+Student 221php
+Senior citizen 186php
+Half-fare 130php
+Discounted Rate 208php
+Super Promo 50php
+
+*/
