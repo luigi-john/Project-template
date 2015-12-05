@@ -33,15 +33,29 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    main.dashboard-main {
+        padding-left: 0px!important;
+    }
+    .dashboard-settings, .db-side-menu {
+        i {
+            padding-top: 12px;
+        }
+    }
+}
+
 main.dashboard-main {
     padding-left: 240px;
 }
+
 .dashboard-nav {
     background-color: #fff;
     i.material-icons {
         color: $onyx;
     }
 }
+
 .some-cards {
     .first-card {
         .card-image {
@@ -64,36 +78,45 @@ main.dashboard-main {
         }
     }
 }
+
 .card-statistics {
     .card {
         padding-bottom: 15px;
     }
 }
+
 .card-main-stat {
     .card {
         padding: 15px;
     }
 }
+
 .dashboard-settings {
     a {
         color: $oceanic;
     }
 }
+
 .dropdown-content.dashboard li > a {
     color: $oceanic;
 }
+
 .oceanic {
     background-color: $oceanic;
 }
+
 .schedule-section {
     .btn {
         background-color: $oceanic;
+        margin-top: 12px;
     }
 }
+
 .boat-pic {
     height: 40px;
     width: 40px;
 }
+
 .edit-btns {
     .btn-floating {
         background-color: $firework;
@@ -105,7 +128,7 @@ main.dashboard-main {
 }
 
 .upload-photo {
-    background-color: color('grey','base');
+    background-color: color('grey', 'base');
     padding: 50px;
     margin-bottom: 15px;
 }
