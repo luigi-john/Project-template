@@ -144,30 +144,35 @@ angular.module('project1App')
 
         $scope.newsList = [{
             id: 0,
+            img: 'images/schedule.jpg',
             headline: 'Lorem Ipsum',
             body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             author: 'Dolor et',
             date: 'July 19, 2015'
         }, {
             id: 1,
+            img: 'images/schedule.jpg',
             headline: 'Lorem Ipsum',
             body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             author: 'Dolor et',
             date: 'July 19, 2015'
         }, {
             id: 2,
+            img: 'images/schedule.jpg',
             headline: 'Lorem Ipsum',
             body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             author: 'Dolor et',
             date: 'July 19, 2015'
         }, {
             id: 3,
+            img: 'images/schedule.jpg',
             headline: 'Lorem Ipsum',
             body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             author: 'Dolor et',
             date: 'July 19, 2015'
         }, {
             id: 4,
+            img: 'images/schedule.jpg',
             headline: 'Lorem Ipsum',
             body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             author: 'Dolor et',
